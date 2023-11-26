@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package example.simple;
+option go_package = "local/proto-buff-examples/proto";
+
+message IdWrapper {
+  uint32 id = 1;
+}
+
+message MapExample {
+  map<string, IdWrapper> ids = 1;
+}
+
